@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177183688-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-177183688-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="description" content="Epic Rules is a tool for Epic Seven players which randomly picks a rule for RTA Arena for fun porpose.">
+  <title>Epic Rules - A tool for Epic Seven players which randomly picks a rule for RTA Arena</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+      <a class="pure-menu-heading" href="">Epic Rules</a>
+      <span class="author">made by <a href="https://github.com/asolera/" target="_blank">@asolera</a> (Solera - Global)</span>
+    </div>
+  </div>
+  <div class="splash-container">
+    <div class="splash">
+      <h1 id="rulesResult" class="splash-head">-</h1>
+      <p class="splash-subhead">
+        Epic Rules is a tool that allows you to randomly pick a rule for Epic Seven RTA Arena.<BR />
+        You can also edit the list and/or use it for other purpose (player names, heroes and so on).<BR />
+        Problems/suggestions, open an issue <a href="https://github.com/asolera/epic-rules/issues" target="_blank">here</a>.
+      </p>
+      <p>
+        <a id="btnRuleSelector" href="#" class="pure-button pure-button-primary">Start!</a>
+      </p>
+      <p>
+        <a id="btnRuleEditor" href="#" class="pure-button pure-button-secondary">Edit Rules</a>
+      </p>
+    </div>
+  </div>
+  <div id="editorModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Edit Rules</h2>
+      <textarea id="rulesInput" rows="20"></textarea>
+      <div class="editorOptions">
+        <a id="btnRuleDefault" href="#" class="pure-button pure-button-gray">Restore Defaults</a>
+        <a id="btnRuleSave" href="#" class="pure-button pure-button-secondary">Save</a>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
